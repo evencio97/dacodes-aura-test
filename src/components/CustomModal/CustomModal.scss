@@ -1,0 +1,28 @@
+.custom-modal {
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p, a, span {
+        font-family: var(--heading);
+    }
+
+    div.custom-modal-content {
+        outline: none;
+        background-color: white;
+        width: 60%;
+        max-height: 90vh;
+        padding: 3rem 2rem 2rem;
+        text-align: center;
+        border-radius: 1rem;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    button.custom-modal-close-btn {
+        position: absolute;
+        top: .2rem;
+        right: .4rem;
+    }
+}

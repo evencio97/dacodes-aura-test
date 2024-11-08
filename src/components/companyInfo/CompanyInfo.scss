@@ -1,0 +1,29 @@
+#company-info-modal {
+
+    div.custom-modal-content {
+
+        img {
+            max-width: 100px;
+            margin-bottom: 1.5rem;
+        }
+        .company-name{
+            margin-bottom: 1.5rem;
+
+            a {
+                color: var(--primary);
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+        }
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            span {
+                font-weight: bold;
+            }
+        }
+        .company-description{
+            font-size: .8rem;
+        }
+    }
+}

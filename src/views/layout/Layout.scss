@@ -1,0 +1,16 @@
+.layout {
+    --sidebar-size: 6%;
+    --sidebar-max-size: 70px;
+    
+    .sidebar {
+        width: var(--sidebar-size);
+        max-width: var(--sidebar-max-size);
+    }
+
+    .content {
+        --sidebar-current-size: min(var(--sidebar-max-size), var(--sidebar-size));
+        max-width: calc(100% - var(--sidebar-current-size));
+        min-height: 100vh;
+        margin-left: var(--sidebar-current-size);
+    }
+}

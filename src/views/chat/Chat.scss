@@ -1,0 +1,112 @@
+.chat {
+  --chat-header-size: 10vh;
+  --chat-form-size: 15vh;
+
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  p, span, a, label, input, .MuiAutocomplete-option {
+      font-family: "Sansation", sans-serif;
+  }
+  
+  .ct-return {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+    svg {
+      font-size: 1.2rem;
+      margin-right: .3rem;
+    }
+  }
+
+  .ct-header {
+    height: var(--chat-header-size);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 2rem 1.5rem 0;
+
+    h1 {
+      width: 100%;
+      color: var(--black);
+      font-size: 1.5rem;
+    }
+  }
+
+  .ct-content {
+    height: calc(100vh - var(--chat-form-size) - var(--chat-header-size));
+    padding: 1rem 2rem 2rem;
+    overflow-y: auto;
+
+    .ct-question {
+      background-color: #F9F5FD;
+      font-size: .8rem;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 5px;
+      padding: .4rem;
+      margin-bottom: 1.5rem;
+    }
+    .ct-response {
+      p {
+        width: fit-content;
+        padding: .5rem 2rem;
+        white-space-collapse: collapse;
+        border-radius: 5px;
+        background-color: var(--primary);
+        color: white;
+        text-align: justify;
+      }
+
+      .ct-response-ops {
+        svg {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .ct-input {
+    padding: 1rem 1.5rem 2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: var(--chat-form-size);
+
+    #chat-input-form {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ct-input-field {
+      width: 85%;
+      input {
+        padding: .6rem 1.5rem;
+      }
+    }
+
+    .ct-submit-btn {
+      margin-left: 1rem;
+      color: var(--primary);
+      
+      svg {
+        margin: -8px 0 0;
+        font-size: 2.5rem;
+        transform: rotate(-20deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.home {
+    
+    p, button, a {
+        font-family: "Abyssinica SIL", sans-serif;
+    }
+
+    .wm-text {
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        .wm-title {
+            font-size: 2rem;
+            color: var(--secondary);
+        }
+        .wm-subtitle {
+            font-size: 1.2rem;
+        }
+        .wm-list {
+            margin-bottom: 1rem;
+
+            p {
+                margin-bottom: .5rem;
+            }
+            .wm-list-text {
+                margin-bottom: .5rem;
+            }
+            .wm-list-item {
+                display: flex;
+                align-items: center;
+
+                svg {
+                    color: var(--success);
+                    margin-right: .3rem;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        // a {
+        //     color: var(--gray);
+        //     border-color: var(--gray);
+        //     text-transform: capitalize;
+        //     font-size: 1rem;
+        // }
+    }
+}

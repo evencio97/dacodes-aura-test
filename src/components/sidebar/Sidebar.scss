@@ -1,0 +1,48 @@
+.sidebar {
+    --logo-container-size: 12vh;
+    
+    background-color: var(--primary);
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    
+    .sb-logo {
+        align-content: center;
+        text-align: center;
+        width: 100%;
+        height: var(--logo-container-size);
+
+        img {
+            width: 80%;
+        }
+    }
+    
+    .sb-menu {
+        padding: 4rem 0 1.5rem;
+        width: 100%;
+        height: calc(100vh - var(--logo-container-size));
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &>div {
+            text-align: center;
+            display: inline-flex;
+            flex-direction: column;
+        }
+
+        a {
+            width: 100%;
+            height: auto;
+            padding: .5rem 0;
+
+            img {
+                width: 1.5rem;
+            }
+        }
+
+        button>svg {
+            color: white;
+        }
+    }
+}

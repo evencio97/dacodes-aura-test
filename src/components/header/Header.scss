@@ -1,0 +1,73 @@
+.header {
+    background-image: url("/header-background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--primary);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    border-radius: 0 0 5px 5px;
+
+    h1, h2, h3 {
+        color: white;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: .5rem;
+    }
+
+    h3 {
+        font-size: .8rem;
+        margin-bottom: 2.5rem;
+        font-weight: unset;
+    }
+
+    .hd-buttons {
+        display: flex;
+        
+        div {
+            background-color: white;
+            border-radius: 5px;
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+            cursor: pointer;
+            margin: 0 .8rem;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            width: 75%;
+        }
+        
+        span {
+            font-family: var(--header), sans-serif;
+            font-weight: 600;
+            font-size: .9rem;
+            white-space: nowrap;
+        }
+    }
+}

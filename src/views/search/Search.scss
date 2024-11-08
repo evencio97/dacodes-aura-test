@@ -1,0 +1,59 @@
+.search {
+  p, span, a, label, input, .MuiAutocomplete-option {
+      font-family: "Sansation", sans-serif;
+  }
+
+  p {
+    margin: 0 0 1rem;
+  }
+
+  .sh-title {
+    font-size: 1.3rem;
+    color: var(--secondary);
+    font-weight: bold;
+  }
+
+  .sh-main-companies {
+    background-color: #F9F5FD;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    max-width: 90%;
+    
+    &>div {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 20px 20px;
+      margin-bottom: .5rem;
+      
+      p {
+        margin: 0;
+        padding: 0 10px;
+        background-color: white;
+        border: #CFCFD4 solid 2px;
+        border-radius: 4px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        
+        span {
+          font-weight: bold;
+          margin-right: 5px;
+        }
+        button {
+          margin-left: 8px;
+          color: #8886BE;
+        }
+      }
+    }
+
+
+    &>span {
+      font-size: .8rem;
+      font-weight: bold;
+      color: #4E5159;
+    }
+  }
+}

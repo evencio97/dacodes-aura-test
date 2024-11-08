@@ -1,0 +1,44 @@
+#menu-projectType li.MuiMenuItem-root {
+    font-family: var(--heading), sans-serif;
+}
+
+#upload-data-modal {
+    input, .MuiSelect-select {
+        font-family: var(--heading), sans-serif;
+        padding: 10px 8px;
+    }
+
+    div.custom-modal-content {
+        width: 80%;
+        max-height: 96vh;
+        padding-top: 1rem;
+        text-align: left;
+        overflow-y: auto;
+        
+        .upload-data-modal-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .checkboxes {
+            width: 100%;
+            margin-bottom: 1.5rem;
+            
+            &>div {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                
+                label {
+                    width: 50%;
+                    margin: 0
+                }
+            }
+        }
+
+        .btn-secundary {
+            margin-right: 1rem;
+        }
+    }
+}

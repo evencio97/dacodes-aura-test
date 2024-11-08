@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Sansation';
+  src: url(sansation-regular.ttf);
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url(sansation-bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url(sansation-light.ttf);
+  font-weight: lighter;
+}
+
+:root {
+  --heading: "Sansation", sans-serif;
+  --text: "Inter", sans-serif;
+  --gray: #3E4551;
+  --black: #202020;
+  --white: #ffffff;
+  --primary: #1B093C;
+  --secondary: #6869AC;
+  --tertiary: #E8E5F9;
+  --success: #19AA90;
+  --danger: #cf3c4f;
+  --warning: #ffc409;
+}
+
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  margin: 0 !important;
+  min-height: 100%;
+  background-color: var(--white);
+  font-size: 1rem;
+  color: var(--black);
+}
+
+body, span, p {
+  font-family: var(--text), sans-serif;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading), sans-serif;
+  color: var(--secondary);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  --content-column-size: 65%;
+
+  padding: 5rem 10% 3rem;
+  display: flex;
+  flex-wrap: nowrap;
+
+  .content-column {
+    width: var(--content-column-size);
+  }
+  .img-column {
+    padding: .5rem;
+    width: calc(100% - var(--content-column-size));
+    align-content: center;
+  }
+}
+
+.custom-btn {
+  color: var(--gray);
+  border-color: var(--gray);
+  text-transform: capitalize;
+  font-size: 1rem;
+  padding: 5px 15px;
+  border: 1px solid;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-secundary, .btn-primary {
+  text-transform: capitalize !important;
+  font-family: var(--heading), sans-serif !important;
+  font-size: 1rem !important;
+  padding: .2rem 2.5rem !important;
+  border-radius: 5px !important;
+  font-weight: bold !important;
+}
+.btn-secundary {
+  color: var(--gray) !important;
+  border-color: var(--gray) !important;
+}
+.btn-primary {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  background-color: var(--tertiary) !important;
+}
+
+.Mui-focused {
+  &.MuiInputLabel-outlined {
+    color: var(--secondary) !important;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border-color: var(--secondary) !important;
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+}
+.form-field span, legend {
+  margin-bottom: .5rem;
+  font-size: .8rem;
+  font-weight: bold;
+  color: var(--black);
+
+  span {
+      color: red;
+      font-size: 1rem;
+  }
+}
