@@ -2,17 +2,13 @@ import { Button, TextField } from "@mui/material";
 import { NavigateFunction } from "react-router-dom";
 import { useAppContext } from "../../hooks/useAppContext";
 import "./Login.scss";
+import users from "../../users.json";
+
 
 interface LoginPropsI {
   formId: string, getFormData: (e: any) => {[k: string]: any},
   navigate: NavigateFunction
 }
-
-const tempUserList = [
-  {email: "email1@something.com", password: "1234"},
-  {email: "email2@something.com", password: "1234"},
-  {email: "email3@something.com", password: "1234"},
-]
 
 export default function Login({formId, getFormData, navigate}: LoginPropsI) {
   const { setUser } = useAppContext();
@@ -21,7 +17,7 @@ export default function Login({formId, getFormData, navigate}: LoginPropsI) {
     event.preventDefault();
     const data: any = getFormData(event.target);
     // Check by email
-    const user = tempUserList.find(e => e.email===data.email);
+    const user = users.find(e => e.email===data.email);
     if (!user)
       return alert("Invalid email");
     if (user.password !== data.password)
