@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './views/layout/Layout';
-import ContentLayout from './views/ContentLayout/ContentLayout';
+import ContentLayout from './views/contentLayout/ContentLayout';
 const AuthView = lazy(() => import('./views/auth/Auth'));
 const HomeView = lazy(() => import('./views/home/Home'));
 const SearchView = lazy(() => import('./views/search/Search'));

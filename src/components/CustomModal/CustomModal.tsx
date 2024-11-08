@@ -15,6 +15,7 @@ export default function CustomModal({ open, handlerClose, id, closeIcon = true, 
       id={id}
       className="custom-modal"
       open={open}
+      // @ts-ignore
       onClose={(event, reason) => handlerClose()}
       aria-labelledby={id+"-title"}
       aria-describedby={id+"-description"}

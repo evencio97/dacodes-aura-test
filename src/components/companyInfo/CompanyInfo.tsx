@@ -1,5 +1,5 @@
 import { FMPCompanyInfoI } from "../../interfaces/company";
-import CustomModal from "../CustomModal/CustomModal";
+import CustomModal from "../customModal/CustomModal";
 import "./CompanyInfo.scss";
 
 interface CompanyInfoPropsI {

@@ -9,9 +9,9 @@ interface LoginPropsI {
 }
 
 const tempUserList = [
-  {email: "avalidemail1@something.com", password: "1234"},
-  {email: "avalidemail2@something.com", password: "1234"},
-  {email: "avalidemail3@something.com", password: "1234"},
+  {email: "email1@something.com", password: "1234"},
+  {email: "email2@something.com", password: "1234"},
+  {email: "email3@something.com", password: "1234"},
 ]
 
 export default function Login({formId, getFormData, navigate}: LoginPropsI) {

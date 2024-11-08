@@ -16,7 +16,7 @@ export default function CompanySearch({ setSelectedCompany }: CompanySearchProps
     setOptions([]);
     setLoading(false);
   }
-
+  // @ts-ignore
   const handleCompanySelected = async (event: any, value: any) => {
     if (!value?.symbol) 
       return cleanOptions();
@@ -54,6 +54,7 @@ export default function CompanySearch({ setSelectedCompany }: CompanySearchProps
       loading={loading}
       onChange={handleCompanySelected}
       options={options}
+      // @ts-ignore
       filterOptions={(options, params) => options}
       getOptionLabel={(option: any) => option.name}
       renderOption={(props, option: FMPCompanyI) => {
